@@ -1,14 +1,14 @@
 {
-	"name": "katsumi",
-	"version": "1.0.3",
-	"main": "src/main.js",
+	"name": "elysia",
+	"version": "1.0.0",
+	"main": "main.js",
 	"engines": {
 		"node": ">=20.0.0"
 	},
 	"type": "module",
 	"scripts": {
-		"start": "node --env-file=.env src/main.js",
-		"dev": "node --watch --env-file=.env src/main.js",
+		"start": "bun --env-file=.env main.js",
+		"dev": "bun --watch --env-file=.env main.js",
 		"prettier": "npx prettier . --write",
 		"pm2": "pm2 start ecosystem.config.cjs",
 		"lint": "eslint"
@@ -55,9 +55,9 @@
 		"#/*": "./*",
 		"#auth/*": "./src/auth/*.js",
 		"#core/*": "./src/core/*.js",
-		"#lib/*": "./src/lib/*.js",
+		"#lib/*": "./lib/*.js",
 		"#config/*": "./src/config/*.js",
 		"#utils/*": "./src/utils/*.js",
-		"#plugins/*": "./src/plugins/*.js"
+		"#plugins/*": "./plugins/*.js"
 	}
 }
